@@ -60,7 +60,8 @@
               android:label="@string/fb_app_name" />
         </config-file>
 
-        <framework src="com.facebook.android:facebook-android-sdk:4.+"/>
+        <preference name="ANDROID_SDK_VERSION" default="4.25.0"/>
+        <framework src="com.facebook.android:facebook-android-sdk:$ANDROID_SDK_VERSION"/>
 
         <!-- cordova plugin src files -->
         <source-file src="src/android/ConnectPlugin.java" target-dir="src/org/apache/cordova/facebook" />
